@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rak Buku</title>
+    <link rel="stylesheet" href="aset\style.css">
+</head>
+
+<body>
+    <aside class="box side">
+        <form class="book" id="tambahrak">
+            <table>
+                <tr>
+                    <td colspan="2" align="center">Buku</td>
+                </tr>
+                <tr>
+                    <td>Judul</td>
+                    <td><input type="text" name="judul" id="judul"></td>
+                </tr>
+                <tr>
+                    <td>Pengarang</td>
+                    <td><input type="text" name="author" id="author"></td>
+                </tr>
+                <tr>
+                    <td>Tahun Terbit</td>
+                    <td><input type="number" name="tahun" id="tahun"></td>
+                </tr>
+                <tr>
+                    <td>Sudah Dibaca?</td>
+                    <td><label class="wdhcek"><input type="checkbox" name="isread" id="isread"><span class="cekbox"></span></label></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Masukan Dalam Rak"></td>
+                </tr>
+            </table>
+        </form>
+    </aside>
+    <div class="content">
+        <div class="shelf" >
+            <h4>Belum Dibaca</h4>
+            <div id="notyet" class="buku"></div>
+        </div>
+        <div class="shelf" >
+            <h4>Sudah Dibaca</h4>
+            <div id="doneread" class="buku"></div>
+        </div>
+    </div>
+    <script src="aset\script.js">
+
+    </script>
+</body>
+
+</html>

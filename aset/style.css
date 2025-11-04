@@ -1,0 +1,150 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.side{
+    float:left;
+}
+.content{
+    margin: 10px;
+    float:right;
+}
+.shelf{
+    margin:4px;
+    border: 10px solid #ae8165;
+    border-radius: 8px;
+    text-align: center;
+}
+.button {
+    width: 100%;
+    background-color: yellow;
+    border: none;
+    font-weight: bold;
+    color: rgb(119, 119, 119);
+    margin-bottom: 5px;
+}
+.book{
+    width: 200px;
+    margin: 20px;
+    box-shadow: 10px 10px 0 0 #7c5340;
+    border-radius: 20px;
+    background-color: #ae8165;
+    text-align: center;
+    height: 250px;
+    color:#ecdfd1;
+}
+
+.book input[type=text],input[type=number] {
+    outline: none;
+    margin: 4px;
+    width: 90%;
+    border:none;
+    border-radius: 20px;
+    background-color: #e0ab80;
+    
+    color:#ecdfd1;
+    text-align: center;
+}
+.book input[type=text]:focus,input[type=number]:focus {
+    border:none;
+    color:#ecdfd1;
+    font-weight: bold;
+    border-bottom:3px solid #ddbe9f;
+}
+.book label{
+    align-self: center;
+}
+.book .wdhcek{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.book .wdhcek input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.book .cekbox{
+  top: 0;
+  left: 30%;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.book .wdhcek:hover input ~ .cekbox {
+  background-color: #ccc;
+}
+.book .wdhcek input:checked ~ .cekbox{
+  background-color: #efaf6f;
+  border-style: none;
+}
+.book .cekbox:after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.book .wdhcek input:checked ~ .cekbox:after {
+  display: block;
+}
+.book .wdhcek .cekbox:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.book input[type=submit] {
+  margin-top: 10px;
+  background-color: #e0ab80;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: small;
+  border-radius: 20px;
+}
+.book input[type=submit]:hover {
+    border-bottom:3px solid #ddbe9f;
+  }
+.book input[type=submit]:focus {
+    border-bottom:3px solid #b6987b;
+}
+.red{
+    background-color: rgb(241, 59, 59);
+    border-color: rgb(136, 13, 13);
+}
+.blue{
+    background-color: rgb(66, 121, 241);
+    border-color: rgb(10, 48, 128)
+}
+.idbuku {
+    margin-top: 3px;
+    border-style: solid;
+    border-width: 3px;
+}
+.buku{
+    margin: 2px;
+
+}
+.buku h2,p {
+    border-bottom: 5px solid white;
+    color: #fff;
+    font-size: medium;
+}
